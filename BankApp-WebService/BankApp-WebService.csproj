@@ -75,15 +75,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BankAppWebService.asmx" />
+    <Content Include="CustomerWebService.asmx" />
+    <Content Include="TransactionWebService.asmx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BankAppWebService.asmx.cs">
-      <DependentUpon>BankAppWebService.asmx</DependentUpon>
+    <Compile Include="CustomerWebService.asmx.cs">
+      <DependentUpon>CustomerWebService.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionWebService.asmx.cs">
+      <DependentUpon>TransactionWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

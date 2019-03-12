@@ -9,14 +9,14 @@ using Bank.Models.Concretes;
 namespace BankApp_WebService
 {
     /// <summary>
-    /// Summary description for BankAppWebService
+    /// Summary description for CustomerWebService
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
-    public class BankAppWebService : System.Web.Services.WebService
+    public class CustomerWebService : System.Web.Services.WebService
     {
 
         [WebMethod]
@@ -37,7 +37,7 @@ namespace BankApp_WebService
         }
 
         [WebMethod]
-        public bool UpdateCustomer (Customers entity)
+        public bool UpdateCustomer(Customers entity)
         {
             try
             {
@@ -54,7 +54,7 @@ namespace BankApp_WebService
         }
 
         [WebMethod]
-        public bool DeleteCustomer (int id)
+        public bool DeleteCustomer(int id)
         {
             try
             {

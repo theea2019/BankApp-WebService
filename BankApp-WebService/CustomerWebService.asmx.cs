@@ -71,13 +71,13 @@ namespace BankApp_WebService
         }
 
         [WebMethod]
-        public List<Customers> SelectAllCustomers()
+        public Customers[] SelectAllCustomers()
         {
             try
             {
                 using (var business = new CustomersBusiness())
                 {
-                    return business.SelectAllCustomers();
+                    return business.SelectAllCustomers().ToArray();
                 }
             }
             catch (Exception)

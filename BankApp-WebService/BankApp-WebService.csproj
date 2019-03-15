@@ -47,9 +47,13 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.BusinessLogic.dll</HintPath>
     </Reference>
+    <Reference Include="Bank.Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.Commons.dll</HintPath>
+    </Reference>
     <Reference Include="Bank.Models, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\BankApp\Bank.Models\bin\Debug\Bank.Models.dll</HintPath>
+      <HintPath>..\..\BankApp\Bank.BusinessLogic\bin\Debug\Bank.Models.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
